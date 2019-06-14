@@ -1,0 +1,88 @@
+{
+	  "manifest_version": 2,
+	  "name": "Union Lotto N2",
+	  "description": "Union Lotto's",
+	  "version": "1.0",
+	  
+	  "browser_action": {
+		"default_icon": "icon.png",
+		"default_tittle":"Lotto Score",
+		"default_popup": "popup.html"
+	  },
+	  
+	  "content_security_policy": "script-src 'self' 'unsafe-eval' https://mis.uuss.net; object-src 'self'" ,
+	  
+	 "background": {
+		"scripts": ["jquery.js","sprintf.js","background.js"]
+	 } ,
+	  
+	 "content_scripts":[
+	 
+		{
+		"matches":["*://www.1396j.com/shishicai/*"] ,			// 重慶比分 cq2
+		"js":["jquery.js", "jquery-ui.js", "jquery.blockUI.js", "sprintf.js", "score1.js"] ,
+		"run_at":"document_end", 
+		"all_frames":true
+		} ,	
+		
+		{
+		"matches":["*://www.1396j.com/pk10/*"] ,				// 北京賽車 bjcar3
+		"js":["jquery.js", "jquery-ui.js", "jquery.blockUI.js", "sprintf.js", "score2.js"] ,
+		"run_at":"document_end", 
+		"all_frames":true
+		} ,
+		
+		{		
+		"matches":["*://www.1399p.com/"] ,						// 北京快樂八 bjkl8
+		"js":["jquery.js", "jquery-ui.js", "jquery.blockUI.js", "sprintf.js", "score3.js"] ,
+		"run_at":"document_end", 
+		"all_frames":true
+		} ,
+
+		{
+		"matches":["*://www.1399p.com/xync/"] ,					// 幸運農場 xync
+		"js":["jquery.js", "jquery-ui.js", "jquery.blockUI.js", "sprintf.js", "score4.js"] ,
+		"run_at":"document_end", 
+		"all_frames":true
+		} ,
+
+		{			
+		"matches":["*://www.1399p.com/"] ,						// 江蘇快三 jsk3
+		"js":["jquery.js", "jquery-ui.js", "jquery.blockUI.js", "sprintf.js", "score5.js"] ,
+		"run_at":"document_end", 
+		"all_frames":true
+		} ,
+		
+		{
+		"matches":["*://www.1399p.com/gdkl10/"] ,			 	// 廣東快樂十分 gd
+		"js":["jquery.js", "jquery-ui.js", "jquery.blockUI.js", "sprintf.js", "score6.js"] ,
+		"run_at":"document_end", 
+		"all_frames":true
+		} ,
+
+		{
+		"matches":["*://www.1399p.com/"] ,			    		//天津快樂十分 tj
+		"js":["jquery.js", "jquery-ui.js", "jquery.blockUI.js", "sprintf.js", "score7.js"] ,
+		"run_at":"document_end", 
+		"all_frames":true
+		} ,
+		
+		{
+		"matches":["*://www.1399p.com/tjssc/"] , //天津時時彩 tj
+		"js":["jquery.js", "jquery-ui.js", "jquery.blockUI.js", "sprintf.js", "score8.js"] ,
+		"run_at":"document_end", 
+		"all_frames":true
+		} ,
+		
+		{
+		"matches":["*://www.16061.net/*"] ,		 //新疆時時彩 sj
+		"js":["jquery.js", "jquery-ui.js", "jquery.blockUI.js", "sprintf.js", "score9.js"] ,
+		"run_at":"document_end", 
+		"all_frames":true
+		} 
+		
+	] ,	
+
+	 "permissions" : ["tabs", "http://*/*", "https://*/*"]
+	 
+}
