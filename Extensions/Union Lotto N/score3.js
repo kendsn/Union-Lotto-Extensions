@@ -26,7 +26,7 @@ function parse() {
 	if (findtr==0) {
 			readyGo();
 	}else{	
-		$("#tbHistory>tbody").find("tr").next().next().next().next().nextAll().each(function() {//找tr 第10個後面
+		$("#tbHistory>tbody").find("tr").next().next().next().next().nextAll().each(function() {
 			$(this).remove();
 		});
 		readyGo();
@@ -37,8 +37,8 @@ function parse() {
 			var vDate=sprintf("%02d",dt.getDate());
 			var tdDate=$(this).find("i").next().html().substr(3,2);	//06-13 15:26
 			if (tdDate<vDate || tdDate.length<1) {$(this).remove();}//td裡 不同日期[刪除]
-			setTimeout(doscore, 3000);
 		});
+		setTimeout(doscore, 3000);
 	}	
 	
 	function doscore() {
@@ -56,8 +56,8 @@ function parse() {
 			ret.data[issue].Number=num.join(",");
 			
 			//array{} SP號碼
-			var sp=$(this).find("td").next().next().html();	//957286
-			ret.data[issue].Number2=sprintf("%02d",sp);
+			var sp=$(this).find("td").next().next().html();
+			ret.data[issue].Number2="";//sprintf("%02d",sp);
 				
 			// TIME 開獎時間 (new)
 			var cu=$(this).find("i").next().html();//06-13 15:26

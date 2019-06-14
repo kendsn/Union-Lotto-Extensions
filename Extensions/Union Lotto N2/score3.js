@@ -57,7 +57,7 @@ function parse() {
 			
 			//array{} SP號碼
 			var sp=$(this).find("td").next().next().html();
-			ret.data[issue].Number2=sprintf("%02d",sp);
+			ret.data[issue].Number2="";//sprintf("%02d",sp);
 				
 			// TIME 開獎時間 (new)
 			var cu=$(this).find("i").next().html();//06-13 15:26

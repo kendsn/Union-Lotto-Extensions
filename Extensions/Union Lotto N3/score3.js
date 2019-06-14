@@ -58,7 +58,7 @@ function parse() {
 			ret.data[issue].Number=num.join(",");
 			
 			//array{} SP號碼
-			ret.data[issue].Number2=sp;
+			ret.data[issue].Number2="";//sp;
 				
 			// TIME 開獎時間 (new) //2019-06-14 15:40:00
 			var cu=$(this).find("td").first().html();
