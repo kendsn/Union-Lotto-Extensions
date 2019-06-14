@@ -33,42 +33,42 @@
 		} ,
 		
 		{		
-		"matches":["*://www.1399p.com/"] ,						// 北京快樂八 bjkl8
+		"matches":["*://www.1396j.com/kl8/*"] ,					// 北京快樂八 bjkl8
 		"js":["jquery.js", "jquery-ui.js", "jquery.blockUI.js", "sprintf.js", "score3.js"] ,
 		"run_at":"document_end", 
 		"all_frames":true
 		} ,
 
 		{
-		"matches":["*://www.1399p.com/xync/"] ,					// 幸運農場 xync
+		"matches":["*://www.1396j.com/xync/*"] ,				// 幸運農場 xync
 		"js":["jquery.js", "jquery-ui.js", "jquery.blockUI.js", "sprintf.js", "score4.js"] ,
 		"run_at":"document_end", 
 		"all_frames":true
 		} ,
 
 		{			
-		"matches":["*://www.1399p.com/"] ,						// 江蘇快三 jsk3
+		"matches":["*://www.1396j.com/jsk3/*"] ,				// 江蘇快三 jsk3
 		"js":["jquery.js", "jquery-ui.js", "jquery.blockUI.js", "sprintf.js", "score5.js"] ,
 		"run_at":"document_end", 
 		"all_frames":true
 		} ,
 		
 		{
-		"matches":["*://www.1399p.com/gdkl10/"] ,			 	// 廣東快樂十分 gd
+		"matches":["*://www.1396j.com/gdkl10/"] ,			 	// 廣東快樂十分 gd
 		"js":["jquery.js", "jquery-ui.js", "jquery.blockUI.js", "sprintf.js", "score6.js"] ,
 		"run_at":"document_end", 
 		"all_frames":true
 		} ,
 
 		{
-		"matches":["*://www.1399p.com/"] ,			    		//天津快樂十分 tj
+		"matches":["*://www.1396j.com/tj10"] ,			    	//天津快樂十分 tj10
 		"js":["jquery.js", "jquery-ui.js", "jquery.blockUI.js", "sprintf.js", "score7.js"] ,
 		"run_at":"document_end", 
 		"all_frames":true
 		} ,
 		
 		{
-		"matches":["*://www.1399p.com/tjssc/"] , //天津時時彩 tj
+		"matches":["*://www.1396j.com/tjssc/"] , 				//天津時時彩 tj
 		"js":["jquery.js", "jquery-ui.js", "jquery.blockUI.js", "sprintf.js", "score8.js"] ,
 		"run_at":"document_end", 
 		"all_frames":true

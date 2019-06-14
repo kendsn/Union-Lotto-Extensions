@@ -15,7 +15,7 @@ function parse() {
 	ret.loc="cq2_2";
 	ret.locname="重慶時時彩2";
 	ret.lottoid=19; 									// 重慶時時彩
-	ret.locurl="https://www.1399p.com/shishicai/";
+	ret.locurl="https://www.1396j.com/shishicai/";
 	ret.locwebname="皇家";
 	ret.loctype=2;
 	ret.date=sprintf("%04d%02d%02d",dt.getFullYear(),dt.getMonth()+1,dt.getDate()); 
@@ -30,15 +30,15 @@ function parse() {
 			$(this).remove();
 		});
 		readyGo();
-		}
+	}
 		
 	function readyGo() {	
 		$("#tbHistory>tbody").next().find("tr").each(function() {
 			var vDate=sprintf("%02d",dt.getDate());
 			var tdDate=$(this).find("i").first().html().substr(6,2);	//20150903-048
 			if (tdDate<vDate || tdDate.length<1) {$(this).remove();}		//td裡 不同日期[刪除]
-			setTimeout(doscore, 3000);
 		});
+		setTimeout(doscore, 3000);
 	}	
 	
 	function doscore() {
@@ -76,16 +76,7 @@ function parse() {
 	}
 	console.log("Ret>>")
 	console.log(ret);
-	setTimeout(function() {location.reload();}, 10000);
+	setTimeout(function() {location.reload();}, 30000);
 }
 
 function alert(msg) {}
-
-
-
-
-
-
-
-
-

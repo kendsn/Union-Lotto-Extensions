@@ -26,7 +26,7 @@ function parse() {
 	if (findtr==0) {
 			readyGo();
 	}else{	
-		$("#dataContainer>tbody>tr").next().next().next().next().nextAll().each(function() {//找tr 第10個後面
+		$("#dataContainer>tbody>tr").next().next().next().next().nextAll().each(function() {
 			$(this).remove();
 		});
 		readyGo();
@@ -34,12 +34,11 @@ function parse() {
 		
 	function readyGo() {	
 		$("#dataContainer>tbody>tr").each(function() {
-			//$(this).find("i").first().html().replace(" ",""); // 期數去空白
 			var vDate=sprintf("%02d",dt.getDate());
 			var tdDate=$(this).find("i").first().html().substr(6,2);	//20170830-39
 			if (tdDate<vDate) {$(this).remove();}		//td裡 不同日期[刪除]
-			setTimeout(doscore, 3000);
 		});
+		setTimeout(doscore, 3000);
 	}
 	
 	function doscore() {
@@ -47,7 +46,7 @@ function parse() {
 		
 			// array{} 期數		20170413-xx
 			var issuecu=$(this).find("i").first().html();		
-			var issue=issuecu.substr(0,11).replace("-","");		
+			var issue=issuecu.replace("-","");		
 			ret.data[issue]={};
 			
 			// array{} 號碼
@@ -79,17 +78,7 @@ function parse() {
 	}
 	console.log("Ret>>")
 	console.log(ret);
-	setTimeout(function() {location.reload();}, 10000);
+	setTimeout(function() {location.reload();}, 30000);
 }
 
 function alert(msg) {}
-	
-
-
-
-
-
-
-
-
-

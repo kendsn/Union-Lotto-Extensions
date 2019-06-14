@@ -186,14 +186,14 @@ function goo() {
 
 
 function tabspage() {	// 2 皇家 ok
-	var url0="https://www.1396j.com/shishicai/?uml=1399p";//重慶時時彩
-	var url1="https://www.1396j.com/pk10/?uml=1399p";//北京賽車
-	var url2="";			 						 //北京快樂八
-	var url3="https://www.1399p.com/xync/";			 //幸運農場
-	var url4="";			 						 //江蘇快三	
-	var url5="https://www.1399p.com/gdkl10/";		 //廣東快樂十分	
-	var url6="";			 						 //天津快樂十分	
-	var url7="https://www.1399p.com/tjssc/";		 //天津時時彩
+	var url0="https://www.1396j.com/shishicai/";//重慶時時彩
+	var url1="https://www.1396j.com/pk10/";		//北京賽車
+	var url2="https://www.1396j.com/kl8/"; 		//北京快樂八
+	var url3="https://www.1396j.com/xync/";		//幸運農場
+	var url4="https://www.1396j.com/jsk3/";		//江蘇快三	
+	var url5="https://www.1396j.com/gdkl10/";	//廣東快樂十分	
+	var url6="";			 					//天津快樂十分	
+	var url7="https://www.1396j.com/tjssc/";	//天津時時彩
 	var url8="https://www.16061.net/#detailNumbers?lottery_id=2"; //新疆時時彩
 	
 	 chrome.tabs.query({},function(tabs){     
@@ -208,9 +208,9 @@ function tabspage() {	// 2 皇家 ok
 		console.log("||*分頁重新帶入*||");	
 		chrome.tabs.update(tabs[0].id, { url:url0});
 		chrome.tabs.update(tabs[1].id, { url:url1});
-	    //chrome.tabs.update(tabs[2].id, { url:url3});
-	    //chrome.tabs.update(tabs[3].id, { url:url5});
-	    //chrome.tabs.update(tabs[4].id, { url:url7});
+	    chrome.tabs.update(tabs[2].id, { url:url2});
+	    chrome.tabs.update(tabs[3].id, { url:url4});
+	    chrome.tabs.update(tabs[4].id, { url:url5});
 	    //chrome.tabs.update(tabs[5].id, { url:url8});
 	 });
 

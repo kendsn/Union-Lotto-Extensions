@@ -15,7 +15,7 @@ function parse() {
 	ret.loc="bjcar3_2";
 	ret.locname="北京賽車2";
 	ret.lottoid=20; 									// 北京賽車
-	ret.locurl="https://www.1399p.com/pk10/";
+	ret.locurl="https://www.1396j.com/pk10/";
 	ret.locwebname="皇家";
 	ret.loctype=2;
 	ret.date=sprintf("%04d%02d%02d",dt.getFullYear(),dt.getMonth()+1,dt.getDate()); 
@@ -37,8 +37,8 @@ function parse() {
 			var vDate=sprintf("%02d",dt.getDate());
 			var tdDate=$(this).find("i").next().html().substr(3,2);	//04-13 10:52
 			if (tdDate<vDate || tdDate.length<1) {$(this).remove();}		//td裡 不同日期[刪除]
-			setTimeout(doscore, 3000);
 		});
+		setTimeout(doscore, 3000);
 	}
 	
 	function doscore() {
@@ -78,19 +78,7 @@ function parse() {
 	}
 	console.log("Ret>>")
 	console.log(ret);
-	setTimeout(function() {location.reload();}, 10000);
+	setTimeout(function() {location.reload();}, 30000);
 }
 
 function alert(msg) {}
-
-	
-
-
-
-
-
-
-
-
-
-
