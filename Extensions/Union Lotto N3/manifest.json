@@ -33,7 +33,7 @@
 		} ,
 
 		{
-		"matches":["*://www.zz339.com/"] ,					//北京快樂八 bjkl8 	
+		"matches":["*://1682013.co/view/beijinkl8/bjkl8_index.html"] , //北京快樂八 bjkl8 	
 		"js":["jquery.js", "jquery-ui.js", "jquery.blockUI.js", "sprintf.js", "score3.js"] ,
 		"run_at":"document_end", 
 		"all_frames":true
@@ -47,14 +47,14 @@
 		} ,
 
 		{
-		"matches":["*://www.zz339.com/"] ,					//江蘇快三 jsk3
+		"matches":["*://06kj77.com/draw-js_k3-today.html"] ,	//江蘇快三 jsk3
 		"js":["jquery.js", "jquery-ui.js", "jquery.blockUI.js", "sprintf.js", "score5.js"] ,
 		"run_at":"document_end",
 		"all_frames":true
 		} ,
 		
 		{
-		"matches":["*://www.cp66607.com/gdkl10/kuaileshifenkaijiang"] ,		//廣東快樂十分 gd
+		"matches":["*://1682013.co/view/klsf/klsf_index.html"] , //廣東快樂十分 gd
 		"js":["jquery.js", "jquery-ui.js", "jquery.blockUI.js", "sprintf.js", "score6.js"] ,
 		"run_at":"document_end",
 		"all_frames":true
