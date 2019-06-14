@@ -53,7 +53,7 @@ function parse() {
 			// array{} 號碼
 			var num=[];
 			$(this).find(".number_k3>span").each(function() {
-				var tnum=$(this).attr("class").replace("num","");
+				var tnum=$(this).attr("class").replace("num0","");
 				//var spnum=sprintf("%02d",tnum);
 				num.push(tnum);
 			});
