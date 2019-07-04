@@ -14,7 +14,7 @@ function parse() {
 	ret.loc="gd10_3";
 	ret.locname="廣東快樂十分3";
 	ret.lottoid=12; 									// 廣東快樂十分
-	ret.locurl="http://www.cp66607.com/gdkl10/kuaileshifenkaijiang";
+	ret.locurl="https://1682013.co/view/klsf/klsf_index.html";
 	ret.locwebname="168開獎網";
 	ret.loctype=2;
 	ret.date=sprintf("%04d%02d%02d",dt.getFullYear(),dt.getMonth()+1,dt.getDate()); 
