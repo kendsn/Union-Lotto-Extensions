@@ -65,7 +65,7 @@ function parse() {
 				num.push(renum);
 			});
 			if (num != "255") {
-				ret.data[issue].Number=num.join(",").substr(0,29);
+				ret.data[issue].Number=num.join(",").substr(0,20);
 			}
 			
 			//array{} SP號碼
