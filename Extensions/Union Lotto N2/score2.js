@@ -54,7 +54,7 @@ function parse() {
 			$(this).find(".number_pk10>span").each(function() {
 				var tnum=$(this).attr("class").replace("num","");
 				var spnum=sprintf("%02d",tnum);
-				num.push(spnum);
+				num.push(tnum);
 			});
 			if (num != "255") {
 			ret.data[issue].Number=num.join(",");

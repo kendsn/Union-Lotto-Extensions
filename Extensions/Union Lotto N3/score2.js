@@ -61,7 +61,7 @@ function parse() {
 			var numtr=$(this).find("td").next().find("span").each(function() {
 				var tnum=$(this).html();
 				var spnum=sprintf("%02d",tnum);
-				num.push(spnum);
+				num.push(tnum);
 			});
 			if (num != "255") {
 			ret.data[issue].Number=num.join(",").substr(0,29);
