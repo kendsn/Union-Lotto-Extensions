@@ -190,7 +190,7 @@ function tabspage() {	// 1 359 ok
 	var url0="http://359.com/cqssc/caipiao";//重慶時時彩
 	var url1="http://359.com/bjpk10/caipiao";//北京賽車
 	var url2="http://359.com/bjkl8/caipiao";//北京快樂八
-	var url3="";//幸運農場
+	var url3="https://www.taiwanlottery.com.tw/Lotto/BINGOBINGO/drawing.aspx";//台灣賓果
 	var url4="http://359.com/jsk3/caipiao";//江蘇快三	
 	var url5="http://359.com/gdklsf/caipiao";//廣東快樂十分	
 	var url6="";//天津快樂十分	
@@ -221,9 +221,9 @@ function tabspage() {	// 1 359 ok
 		chrome.tabs.update(tabs[0].id, { url:url0});
 	    chrome.tabs.update(tabs[1].id, { url:url1});
 	    chrome.tabs.update(tabs[2].id, { url:url2});
-	    chrome.tabs.update(tabs[3].id, { url:url4});
-	    chrome.tabs.update(tabs[4].id, { url:url5});
-	    //chrome.tabs.update(tabs[5].id, { url:url8});
+	    chrome.tabs.update(tabs[3].id, { url:url3});
+	    chrome.tabs.update(tabs[4].id, { url:url4});
+	    chrome.tabs.update(tabs[5].id, { url:url5});
 	 });
 
 }

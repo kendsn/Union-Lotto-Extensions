@@ -1,4 +1,4 @@
-//幸運農場1
+//台灣賓果1
 
 
 // ------------------------------
@@ -12,57 +12,50 @@ function parse() {
 	var dt=new Date();	// *抓現在的Date*
 	var ret={};
 	ret.error="";
-	ret.loc="xync";
-	ret.locname="幸運農場1";
-	ret.lottoid=14; 								
-	ret.locurl="http://1680380.com/html/cqnc/index.html";
-	ret.locwebname="168kai";
+	ret.loc="twbg";
+	ret.locname="台灣賓果1";
+	ret.lottoid=1000; 								
+	ret.locurl="https://www.taiwanlottery.com.tw/Lotto/BINGOBINGO/drawing.aspx";
+	ret.locwebname="台灣彩券";
 	ret.loctype=2;
 	ret.date=sprintf("%04d%02d%02d",dt.getFullYear(),dt.getMonth()+1,dt.getDate()); 
 	ret.data={};
 	
 	// 處裡不要的資料
-	var findSix=$("#jrsmhmtjTab>tbody").find("tr").next().next().next().next().next().next().length;
+	var findSix=$(".tableFull:eq(1)>tbody").find("tr").next().next().next().next().next().next().length;
 		console.log("findSix="+findSix);
 		if (findSix==0 || findSix==1) {
-			readyGo();
+			setTimeout(doscore, 3000);
 		}else{
-			$("#jrsmhmtjTab>tbody").find("tr").next().next().next().next().next().nextAll().each(function() {//找tr 第6個後面
+			$(".tableFull:eq(1)>tbody").find("tr").next().next().next().next().next().next().next().nextAll().each(function() {//找tr 第6個後面
 				$(this).remove(); 
 			});
-			readyGo();
+			setTimeout(doscore, 3000);
 		}
 	
-	function readyGo() {	
-		$("#jrsmhmtjTab>tbody").find("tr").next().each(function() {
-			var delAD=$(this).find("td").next().next().html();
-				if (delAD==" ") {$(this).remove();}	//td
-				$(this).find("td").next().next().find("i").each(function() {		//td裡
-					if ($(this).html()=="-") {$(this).parent().parent().remove();}
-				});
-		});
-		setTimeout(doscore, 3000);
-	}
-	
 	function doscore() {
-		$("#jrsmhmtjTab>tbody").find("tr").next().each(function() {
+		$(".tableFull:eq(1)>tbody").find("tr").next().next().next().each(function() {
 
 			// array{} 期數 *20170810049 *
-			var issue=$(this).find("td").next().html();		
+			var issue=$(this).find("td").first().html();		
 			ret.data[issue]={};
 
 			// array{} 號碼
 			var num=[];
-			$(this).find("td").next().next().find("i").each(function() {
-				num.push($(this).html());
-			});
+			var ttnum = $(this).find("td").next().html();
+			var tt=ttnum.split(" ");
+			tt = tt.filter(function(n){return n}); //移除array "" 
+			for (var i=0;i<tt.length;i++) {
+				tt[i]
+				num.push(tt[i]);
+			}
 			ret.data[issue].Number=num.join(",");
 			
 			// array{} SP號碼
-			ret.data[issue].Number2="";
+			ret.data[issue].Number2=$(this).find("td").next().next().html();
 				
 			// TIME 開獎時間 (new)
-			ret.data[issue].Time=$(this).find("td").html();	
+			ret.data[issue].Time="";	
 
 			// *抓現在的時間*
 			ret.data[issue].GetTime=sprintf("%04d-%02d-%02d %02d:%02d:%02d",dt.getFullYear(),dt.getMonth()+1,dt.getDate(),dt.getHours(),dt.getMinutes(),dt.getSeconds());
@@ -74,7 +67,7 @@ function parse() {
 	}
 	console.log("Ret>>")
 	console.log(ret);
-	setTimeout(function() {location.reload();}, 10000);
+	setTimeout(function() {location.reload();}, 30000);
 }
 
 function alert(msg) {}

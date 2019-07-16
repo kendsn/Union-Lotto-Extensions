@@ -39,7 +39,7 @@
 		} ,
 
 		{
-		"matches":["*://1680380.com/html/cqnc/index.*"] , // 幸運農場 xync
+		"matches":["*://*.taiwanlottery.com.tw/Lotto/BINGOBINGO/drawing.*"] , // 台灣賓果1
 		"js":["jquery.js", "jquery-ui.js", "jquery.blockUI.js", "sprintf.js", "score4.js"] ,
 		"run_at":"document_end", 
 		"all_frames":true
