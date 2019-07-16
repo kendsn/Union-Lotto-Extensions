@@ -60,11 +60,12 @@ function parse() {
 			var num=[];
 			var numtr=$(this).find("td").next().find("span").each(function() {
 				var tnum=$(this).html();
-				var spnum=sprintf("%02d",tnum);
-				num.push(tnum);
+				var renum=parseFloat(tnum);
+				//var spnum=sprintf("%02d",tnum);
+				num.push(renum);
 			});
 			if (num != "255") {
-			ret.data[issue].Number=num.join(",").substr(0,29);
+				ret.data[issue].Number=num.join(",").substr(0,29);
 			}
 			
 			//array{} SP號碼
@@ -87,7 +88,7 @@ function parse() {
 	}
 	console.log("Ret>>")
 	console.log(ret);
-	setTimeout(function() {location.reload();}, 10000);
+	setTimeout(function() {location.reload();}, 30000);
 }
 
 function alert(msg) {}

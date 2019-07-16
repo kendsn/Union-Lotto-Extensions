@@ -53,11 +53,12 @@ function parse() {
 			var num=[];
 			$(this).find(".number_pk10>span").each(function() {
 				var tnum=$(this).attr("class").replace("num","");
-				var spnum=sprintf("%02d",tnum);
-				num.push(tnum);
+				var renum=parseFloat(tnum);
+				//var spnum=sprintf("%02d",tnum);
+				num.push(renum);
 			});
 			if (num != "255") {
-			ret.data[issue].Number=num.join(",");
+				ret.data[issue].Number=num.join(",");
 			}
 			
 			//array{} SP號碼

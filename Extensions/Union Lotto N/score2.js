@@ -26,7 +26,7 @@ function parse() {
 	if (findtr==0) {
 			readyGo();
 	}else{	
-		$("#history>tbody").find("tr").next().next().next().next().nextAll().each(function() {//找tr 第10個後面
+		$("#history>tbody").find("tr").next().next().next().next().nextAll().each(function() {
 			$(this).remove();
 		});
 		readyGo();
@@ -37,8 +37,8 @@ function parse() {
 			var vDate=sprintf("%02d",dt.getDate());
 			var tdDate=$(this).find("i").next().html().substr(3,2);	//04-13 10:52
 			if (tdDate<vDate || tdDate.length<1) {$(this).remove();}		//td裡 不同日期[刪除]
-			setTimeout(doscore, 3000);
 		});
+		setTimeout(doscore, 3000);
 	}
 	
 	function doscore() {
@@ -53,11 +53,12 @@ function parse() {
 			var num=[];
 			$(this).find(".number_pk10>span").each(function() {
 				var tnum=$(this).attr("class").replace("num","");
-				var spnum=sprintf("%02d",tnum);
-				num.push(tnum);
+				var renum=parseFloat(tnum);
+				//var spnum=sprintf("%02d",tnum);
+				num.push(renum);
 			});
 			if (num != "255") {
-			ret.data[issue].Number=num.join(",");
+				ret.data[issue].Number=num.join(",");
 			}
 			
 			//array{} SP號碼
