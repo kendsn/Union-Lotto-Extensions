@@ -14,7 +14,7 @@ function parse() {
 	ret.error="";
 	ret.loc="twbg";
 	ret.locname="台灣賓果1";
-	ret.lottoid=1000; 								
+	ret.lottoid=30; 								
 	ret.locurl="https://www.taiwanlottery.com.tw/Lotto/BINGOBINGO/drawing.aspx";
 	ret.locwebname="台灣彩券";
 	ret.loctype=2;
