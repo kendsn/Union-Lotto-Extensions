@@ -52,7 +52,7 @@ function parse() {
 			ret.data[issue].Number=num.join(",");
 			
 			// array{} SP號碼
-			ret.data[issue].Number2=$(this).find("td").next().next().html();
+			ret.data[issue].Number2="";
 				
 			// TIME 開獎時間 (new)
 			ret.data[issue].Time="";	
