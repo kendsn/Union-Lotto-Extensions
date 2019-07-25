@@ -82,7 +82,7 @@ function parse() {
 	}
 	console.log("Ret>>")
 	console.log(ret);
-	setTimeout(function() {location.reload();}, 5000);
+	setTimeout(function() {location.reload();}, 20000);
 }
 
 function alert(msg) {}
