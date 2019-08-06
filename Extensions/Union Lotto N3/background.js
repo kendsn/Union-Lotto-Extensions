@@ -211,7 +211,7 @@ function tabspage() {	// 3 cpcp彩票 test
 		chrome.tabs.update(tabs[0].id, { url:url0});
 		chrome.tabs.update(tabs[1].id, { url:url1});
 	    chrome.tabs.update(tabs[2].id, { url:url2});
-	    chrome.tabs.update(tabs[3].id, { url:url4});
+	    //chrome.tabs.update(tabs[3].id, { url:url4});
 	    chrome.tabs.update(tabs[4].id, { url:url5});
 	    //chrome.tabs.update(tabs[5].id, { url:url8});
 	 });
