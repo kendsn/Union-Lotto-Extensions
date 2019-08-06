@@ -222,7 +222,7 @@ function tabspage() {	// 1 359 ok
 	    chrome.tabs.update(tabs[1].id, { url:url1});
 	    chrome.tabs.update(tabs[2].id, { url:url2});
 	    chrome.tabs.update(tabs[3].id, { url:url3});
-	    //chrome.tabs.update(tabs[4].id, { url:url4});
+	    chrome.tabs.update(tabs[4].id, { url:url4});
 	    chrome.tabs.update(tabs[5].id, { url:url5});
 	 });
 
