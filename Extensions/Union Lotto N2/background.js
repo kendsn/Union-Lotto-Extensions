@@ -186,14 +186,14 @@ function goo() {
 
 
 function tabspage() {	// 2 皇家 ok
-	var url0="https://www.1392p.com/shishicai/";//重慶時時彩
-	var url1="https://www.1392p.com/pk10/";		//北京賽車
-	var url2="https://www.1392p.com/kl8/"; 		//北京快樂八
-	var url3="https://www.1392p.com/xync/";		//幸運農場
-	var url4="https://www.1392p.com/jsk3/";		//江蘇快三	
-	var url5="https://www.1392p.com/gdkl10/";	//廣東快樂十分	
+	var url0="https://www.1396u.com/shishicai/";//重慶時時彩
+	var url1="https://www.1396u.com/pk10/";		//北京賽車
+	var url2="https://www.1396u.com/kl8/"; 		//北京快樂八
+	var url3="https://www.1396u.com/xync/";		//幸運農場
+	var url4="https://www.1396u.com/jsk3/";		//江蘇快三	
+	var url5="https://www.1396u.com/gdkl10/";	//廣東快樂十分	
 	var url6="";			 					//天津快樂十分	
-	var url7="https://www.1392p.com/tjssc/";	//天津時時彩
+	var url7="https://www.1396u.com/tjssc/";	//天津時時彩
 	var url8="https://www.16061.net/#detailNumbers?lottery_id=2"; //新疆時時彩
 	
 	 chrome.tabs.query({},function(tabs){     

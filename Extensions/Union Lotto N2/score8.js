@@ -15,7 +15,7 @@ function parse() {
 	ret.loc="tj_2";
 	ret.locname="天津時時彩2";
 	ret.lottoid=8; 							
-	ret.locurl="https://www.1399p.com/tjssc/";
+	ret.locurl="https://www.1396u.com/tjssc/";
 	ret.locwebname="皇家";
 	ret.loctype=2;
 	ret.date=sprintf("%04d%02d%02d",dt.getFullYear(),dt.getMonth()+1,dt.getDate()); 

@@ -15,7 +15,7 @@ function parse() {
 	ret.loc="xync_2";
 	ret.locname="幸運農場2";
 	ret.lottoid=14; 									// 幸運農場
-	ret.locurl="https://www.1399p.com/xync/";
+	ret.locurl="https://www.1396u.com/xync/";
 	ret.locwebname="皇家";
 	ret.loctype=2;
 	ret.date=sprintf("%04d%02d%02d",dt.getFullYear(),dt.getMonth()+1,dt.getDate()); 

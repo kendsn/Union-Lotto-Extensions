@@ -15,7 +15,7 @@ function parse() {
 	ret.loc="bjcar3_2";
 	ret.locname="北京賽車2";
 	ret.lottoid=20; 									// 北京賽車
-	ret.locurl="https://www.1396j.com/pk10/";
+	ret.locurl="https://www.1396u.com/pk10/";
 	ret.locwebname="皇家";
 	ret.loctype=2;
 	ret.date=sprintf("%04d%02d%02d",dt.getFullYear(),dt.getMonth()+1,dt.getDate()); 

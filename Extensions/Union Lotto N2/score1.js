@@ -15,7 +15,7 @@ function parse() {
 	ret.loc="cq2_2";
 	ret.locname="重慶時時彩2";
 	ret.lottoid=19; 									// 重慶時時彩
-	ret.locurl="https://www.1396j.com/shishicai/";
+	ret.locurl="https://www.1396u.com/shishicai/";
 	ret.locwebname="皇家";
 	ret.loctype=2;
 	ret.date=sprintf("%04d%02d%02d",dt.getFullYear(),dt.getMonth()+1,dt.getDate()); 

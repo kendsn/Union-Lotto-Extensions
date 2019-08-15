@@ -15,7 +15,7 @@ function parse() {
 	ret.loc="gd10_2";
 	ret.locname="廣東快樂十分2";
 	ret.lottoid=12; 									// 廣東快樂十分
-	ret.locurl="https://www.1399p.com/gdkl10/";
+	ret.locurl="https://www.1396u.com/gdkl10/";
 	ret.locwebname="皇家";
 	ret.loctype=2;
 	ret.date=sprintf("%04d%02d%02d",dt.getFullYear(),dt.getMonth()+1,dt.getDate()); 
