@@ -187,12 +187,12 @@ function goo() {
 
 
 function tabspage() {	// 1 359 ok
-	var url0="http://359.com/cqssc/caipiao";//重慶時時彩
-	var url1="http://359.com/bjpk10/caipiao";//北京賽車
-	var url2="http://359.com/bjkl8/caipiao";//北京快樂八
+	var url0="https://www.666icp.com/shishicai/kaijiang/";//重慶時時彩
+	var url1="https://www.666icp.com/pk10/kaijiang/";//北京賽車
+	var url2="https://www.666icp.com/kl8/kaijiang/";//北京快樂八
 	var url3="https://www.taiwanlottery.com.tw/Lotto/BINGOBINGO/drawing.aspx";//台灣賓果
-	var url4="http://359.com/jsk3/caipiao";//江蘇快三	
-	var url5="http://359.com/gdklsf/caipiao";//廣東快樂十分	
+	var url4="https://www.666icp.com/jsk3/kaijiang/";//江蘇快三	
+	var url5="https://www.666icp.com/gdkl10/kaijiang/";//廣東快樂十分	
 	var url6="";//天津快樂十分	
 	var url7="";//天津時時彩
 	var url8="";//新疆時時彩

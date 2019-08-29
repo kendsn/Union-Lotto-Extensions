@@ -15,45 +15,43 @@ function parse() {
 	ret.loc="gd10";
 	ret.locname="廣東快樂十分1";
 	ret.lottoid=12; 							
-	ret.locurl="http://359.com/gdklsf/caipiao";
-	ret.locwebname="359彩票";
+	ret.locurl="https://www.666icp.com/gdkl10/kaijiang/";
+	ret.locwebname="愛彩票";
 	ret.loctype=2;
 	ret.date=sprintf("%04d%02d%02d",dt.getFullYear(),dt.getMonth()+1,dt.getDate()); 
 	ret.data={};
 
 	// 處裡不要的資料
-	var findtr = $("#history>tbody").find("tr").next().next().next().next().length;
+	var findtr = $(".j-numslist>tbody>tr").next().next().next().next().length;
 	if (findtr==0) {
 			readyGo();
 	}else{	
-		$("#history>tbody").find("tr").next().next().next().next().nextAll().each(function() {
+		$(".j-numslist>tbody>tr").next().next().next().next().nextAll().each(function() {
 			$(this).remove();
 		});
 		readyGo();
 	}
 		
 	function readyGo() {	
-		$("#history>tbody>tr").each(function() {
+		$(".j-numslist>tbody>tr").each(function() {
 			var vDate=sprintf("%02d",dt.getDate());
-			var tdDate=$(this).find("i").first().html().substr(6,2); //20190613025
+			var tdDate=$(this).find("td").first().find("span").first().html().substr(6,2); //20150903-048
 			if (tdDate<vDate || tdDate.length<1) {$(this).remove();} //td裡 不同日期[刪除]
 		});
 		setTimeout(doscore, 3000);
 	}	
 	
 	function doscore() {
-		$("#history>tbody>tr").each(function() {
+		$(".j-numslist>tbody>tr").each(function() {
 		
 			// array{} 期數
-			var issuecu=$(this).find("i").first().html(); //20190613025
-			var ltda=issuecu.substr(0,8);
-			var ltdb=issuecu.substr(9,2);
-			var issue=sprintf("%s%s",ltda,ltdb);
+			var issuecu=$(this).find("td").first().find("span").first().html();	//20190829-16
+			var issue=issuecu.replace("-","");	//2019082916
 			ret.data[issue]={};
 			
 			// array{} 號碼
 			var num=[];
-			$(this).find(".number_redAndBlue>span").each(function() {
+			$(this).find("td").first().next().find("span").each(function() {
 				num.push($(this).html());
 			});
 			ret.data[issue].Number=num.join(",");
@@ -65,7 +63,7 @@ function parse() {
 			var year=issuecu.substr(0,4);			//2019
 			var month=issuecu.substr(4,2);			//06
 			var date=issuecu.substr(6,2);			//13
-			var tm=$(this).find("i").next().html();//17:10
+			var tm=$(this).find("td").first().find("span").next().html();//00:00
 			if (tm=="00:00") {ret.data[issue].Time=="";} 
 			else {ret.data[issue].Time=sprintf("%s-%s-%s %s:%02d",year,month,date,tm,0);}
 			
