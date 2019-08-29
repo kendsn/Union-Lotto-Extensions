@@ -33,7 +33,7 @@ function parse() {
 	}
 		
 	function readyGo() {	
-		$("#tbHistory>tbody>tr").each(function() {
+		$(".j-numslist>tbody>tr").each(function() {
 			var vDate=sprintf("%02d",dt.getDate());
 			var tdDate=$(this).find("td").first().find("span").next().html().substr(3,2);	//08-29 13:40
 			if (tdDate<vDate || tdDate.length<1) {$(this).remove();}//td裡 不同日期[刪除]
@@ -42,7 +42,7 @@ function parse() {
 	}	
 	
 	function doscore() {
-		$("#tbHistory>tbody>tr").each(function() {
+		$(".j-numslist>tbody>tr").each(function() {
 
 			// array{} 期數
 			var issuecu=$(this).find("td").first().find("span").first().html();
@@ -51,10 +51,12 @@ function parse() {
 			
 			// array{} 號碼
 			var num=[];
-			$(this).find("td").first().next().find("i").each(function() {
+			$(this).find(".record-num>i").each(function() {
+			  num.push($(this).html());	
 			//$(this).html() = null	,data-n
-			  var er = $(this).attr("data-n");
-			  num.push(er);
+			// var er = $(this).attr("data-n");
+			// num.push(er);
+			  
 			});
 			if (num != "255") {
 				ret.data[issue].Number=num.join(",");
