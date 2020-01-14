@@ -188,11 +188,11 @@ function goo() {
 
 
 function tabspage() {	// 3 cpcp彩票 test
-	var url0="https://06kj77.com/draw-cq_ssc-today.html";//重慶時時彩
-	var url1="https://06kj77.com/draw-pk10-today.html";//北京賽車
+	var url0="https://06kj1.com/draw-cq_ssc-today.html";//重慶時時彩
+	var url1="https://06kj1.com/draw-pk10-today.html";//北京賽車
 	var url2="https://1682013.co/view/beijinkl8/bjkl8_index.html";//北京快樂八									  											 													//北京快樂八
 	var url3="";//幸運農場
-	var url4="https://06kj77.com/draw-js_k3-today.html";//江蘇快三				   																												//江蘇快三
+	var url4="https://06kj1.com/draw-js_k3-today.html";//江蘇快三				   																												//江蘇快三
 	var url5="https://1682013.co/view/klsf/klsf_index.html";//廣東快樂十分	
 	var url6="";//天津快樂十分	
 	var url7="";//天津時時彩	

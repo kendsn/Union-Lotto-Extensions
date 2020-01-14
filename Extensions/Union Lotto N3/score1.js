@@ -14,7 +14,7 @@ function parse() {
 	ret.loc="cq2_3";
 	ret.locname="重慶時時彩3";
 	ret.lottoid=19; 									// 重慶時時彩
-	ret.locurl="https://06kj77.com/draw-cq_ssc-today.html";
+	ret.locurl="https://06kj1.com/draw-cq_ssc-today.html";
 	ret.locwebname="06開獎網";
 	ret.loctype=2;
 	ret.date=sprintf("%04d%02d%02d",dt.getFullYear(),dt.getMonth()+1,dt.getDate()); 

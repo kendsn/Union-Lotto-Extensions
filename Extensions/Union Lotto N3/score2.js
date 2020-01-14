@@ -14,7 +14,7 @@ function parse() {
 	ret.loc="bjcar3_3";
 	ret.locname="北京賽車3";
 	ret.lottoid=20; 									// 北京賽車
-	ret.locurl="https://06kj77.com/draw-pk10-today.html";
+	ret.locurl="https://06kj1.com/draw-pk10-today.html";
 	ret.locwebname="06開獎網";
 	ret.loctype=2;
 	ret.date=sprintf("%04d%02d%02d",dt.getFullYear(),dt.getMonth()+1,dt.getDate()); 

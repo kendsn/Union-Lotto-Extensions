@@ -19,14 +19,14 @@
 	 "content_scripts":[
 	 
 		{
-		"matches":["*://06kj77.com/draw-cq_ssc-today.html"] ,  // 重慶比分 cq2															
+		"matches":["*://06kj1.com/draw-cq_ssc-today.html"] ,  // 重慶比分 cq2															
 		"js":["jquery.js", "jquery-ui.js", "jquery.blockUI.js", "sprintf.js", "score1.js"] ,
 		"run_at":"document_end", 
 		"all_frames":true
 		}, 
 		
 		{
-		"matches":["*://06kj77.com/draw-pk10-today.html"] ,  //北京賽車 bjcar3
+		"matches":["*://06kj1.com/draw-pk10-today.html"] ,  //北京賽車 bjcar3
 		"js":["jquery.js", "jquery-ui.js", "jquery.blockUI.js", "sprintf.js", "score2.js"] ,
 		"run_at":"document_end", 
 		"all_frames":true
@@ -47,7 +47,7 @@
 		} ,
 
 		{
-		"matches":["*://06kj77.com/draw-js_k3-today.html"] ,	//江蘇快三 jsk3
+		"matches":["*://06kj1.com/draw-js_k3-today.html"] ,	//江蘇快三 jsk3
 		"js":["jquery.js", "jquery-ui.js", "jquery.blockUI.js", "sprintf.js", "score5.js"] ,
 		"run_at":"document_end",
 		"all_frames":true

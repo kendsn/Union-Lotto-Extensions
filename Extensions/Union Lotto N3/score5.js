@@ -15,7 +15,7 @@ function parse() {
 	ret.loc="jsk3_3";
 	ret.locname="江蘇快三3";
 	ret.lottoid=21;
-	ret.locurl="https://06kj77.com/draw-js_k3-today.html";
+	ret.locurl="https://06kj1.com/draw-js_k3-today.html";
 	ret.locwebname="06開獎網";
 	ret.loctype=2;
 	ret.date=sprintf("%04d%02d%02d",dt.getFullYear(),dt.getMonth()+1,dt.getDate()); 
