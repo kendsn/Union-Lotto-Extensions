@@ -78,6 +78,13 @@
 		"js":["jquery.js", "jquery-ui.js", "jquery.blockUI.js", "sprintf.js", "score9.js"] ,
 		"run_at":"document_end", 
 		"all_frames":true
+		} ,
+		
+		{
+		"matches":["*://api.bjjfnet.com/data/opencode/2031"] , //澳門十分六合彩 sj
+		"js":["jquery.js", "jquery-ui.js", "jquery.blockUI.js", "sprintf.js", "score10.js"] ,
+		"run_at":"document_end", 
+		"all_frames":true
 		} 
 		
 	] ,	

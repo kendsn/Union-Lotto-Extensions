@@ -196,6 +196,7 @@ function tabspage() {	// 1 359 ok
 	var url6="";//天津快樂十分	
 	var url7="";//天津時時彩
 	var url8="";//新疆時時彩
+	var url9="http://api.bjjfnet.com/data/opencode/2031";//澳門十分六合彩
 	
 	 chrome.tabs.query({},function(tabs){     
 		/*
@@ -224,6 +225,7 @@ function tabspage() {	// 1 359 ok
 	    chrome.tabs.update(tabs[3].id, { url:url3});
 	    chrome.tabs.update(tabs[4].id, { url:url4});
 	    chrome.tabs.update(tabs[5].id, { url:url5});
+		chrome.tabs.update(tabs[6].id, { url:url9});
 	 });
 
 }
@@ -234,15 +236,15 @@ $(document).ready(function() {		// * onload
 	tabspage();	   
 	
 	if (!ox.connected){
-		go();				
+	  go();				
 	}else {
-		ox.socket.close();
+	  ox.socket.close();
 	}
 
 	if (!oxo.connected){
-		//goo();			
+	  //goo();			
 	}else {
-		oxo.socket.close();
+	  oxo.socket.close();
 	}
 	
 });

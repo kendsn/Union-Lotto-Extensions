@@ -23,7 +23,7 @@ function parse() {
 	
 	// 處裡不要的資料
 	var findSix=$(".tableFull:eq(1)>tbody").find("tr").next().next().next().next().next().next().length;
-		console.log("findSix="+findSix);
+		// console.log("findSix="+findSix);
 		if (findSix==0 || findSix==1) {
 			setTimeout(doscore, 3000);
 		}else{
